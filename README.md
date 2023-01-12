@@ -46,9 +46,16 @@ storybook은 UI 개발환경이며,UI를 컴포넌트 단위로 테스팅 해볼
 
 ### 결과
 
-![](https://velog.velcdn.com/images/100dongwoo/post/4994558f-7bf2-4bab-a699-bdf2ee755402/image.png)
-
-![](https://velog.velcdn.com/images/100dongwoo/post/7be7af97-4544-419b-b31d-900fa848d7fe/image.png)
+```
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+```
 <hr/>
 
 
@@ -121,7 +128,7 @@ storybook은 UI 개발환경이며,UI를 컴포넌트 단위로 테스팅 해볼
 가장 상단에 있는 .storybook 디렉토리에 존재하며 우리가 메인내부에서 활용하려는 구성이 포함되어있습니다.
 
 -> 설치한 라이브러리 두개를 적용시킨다
-![업로드중..](blob:https://velog.io/70bfa4a1-4dfa-4a20-9e7d-81dda14be533)
+![](https://velog.velcdn.com/images/100dongwoo/post/34d11dc9-444c-4b16-a096-9381f779da30/image.png)
 
 
 
@@ -135,21 +142,21 @@ export const StoryBookTest=()=>{
 }
 ```
 
-![업로드중..](blob:https://velog.io/44cbeebc-76b1-4ad3-bffc-26b3e2ace917)
+![](https://velog.velcdn.com/images/100dongwoo/post/cd396edd-307a-4c31-8065-9806b09193c5/image.png)
 
 
 > props를 해당 부분 처럼 입력 
 
-![업로드중..](blob:https://velog.io/ea3f8859-e18c-4207-8520-5ec1fa66bad2)
+![](https://velog.velcdn.com/images/100dongwoo/post/3330d87f-6c26-43a8-bd23-3673fc0d6df4/image.png)
 
 
 => TypeScript의 경우는 필요하지않습니다
-![업로드중..](blob:https://velog.io/e5a05287-b345-47dd-ac2f-7d64d9518be9)
+![](https://velog.velcdn.com/images/100dongwoo/post/76801682-7c73-4093-8089-0f551a513816/image.png)
 
 
 -> 결과 창
 
-![업로드중..](blob:https://velog.io/1da78476-71d4-4850-8492-62f464680019)
+![](https://velog.velcdn.com/images/100dongwoo/post/a9348a6d-8b14-47df-b63c-1eb2b9d2cc72/image.png)
 
 
 - StoryBook이 엄청 신기하게도 초기color는 지정해주지만 변경은 엄청 간단하게 해주네요~~
@@ -184,17 +191,14 @@ Default.args = {
 
 
 # 결과 화면
-![업로드중..](blob:https://velog.io/10a0040a-d1b2-4bd7-b468-b55d488017a4)
+![](https://velog.velcdn.com/images/100dongwoo/post/e77a126c-7536-47f6-a8ee-b92332cb5e1d/image.png)
 
 
 ## 참고
 
 > argTypes를 수정하여 row,header 수정 불가능 하두록 수정 [참고](https://storybook.js.org/docs/react/essentials/controls)
 
-![업로드중..](blob:https://velog.io/cb0a5e68-6967-4780-815d-2b84ca29ddd2)
-
-
-
+![](https://velog.velcdn.com/images/100dongwoo/post/85ff8a52-6b53-4730-b0ce-8e1c1884d1b2/image.png)
 
 
 # Step3 :MDX사용법 [참고](https://storybook.js.org/docs/react/writing-docs/mdx)
@@ -209,7 +213,8 @@ Default.args = {
 - stories/StoryBookTest.stories.mdx 생성
 
 ## 결과화면 및 StoryBookTest.stories.mdx소스코드
-![업로드중..](blob:https://velog.io/f7a36990-f5fd-4ce4-89e9-d15ea14b0611)
+
+![](https://velog.velcdn.com/images/100dongwoo/post/5923cb59-1b9d-492b-b2fa-86d49284defc/image.png)
 
 
 -> 보다간단하게 해당 문서가 작성이 가능합니다
